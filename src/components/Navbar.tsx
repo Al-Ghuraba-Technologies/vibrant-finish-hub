@@ -58,13 +58,6 @@ export default function Navbar() {
                 alt="Hindustan Paints & Tools"
                 className="h-9 w-auto object-contain"
               />
-              <span
-                className={`font-heading font-bold text-lg transition-colors duration-500 ${
-                  scrolled ? "text-foreground" : "text-white"
-                }`}
-              >
-                Hindustan Paints
-              </span>
             </Link>
 
             {/* Desktop links */}
