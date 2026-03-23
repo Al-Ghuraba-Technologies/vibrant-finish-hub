@@ -133,16 +133,7 @@ export default function Navbar() {
           scrolled ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
       >
-        {/* Left circle — hamburger */}
-        <button
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle menu"
-          className="w-12 h-12 rounded-full bg-white/95 backdrop-blur-md shadow-[0_4px_20px_-4px_rgba(17,24,39,0.22)] flex items-center justify-center text-foreground transition-transform duration-200 active:scale-95"
-        >
-          {menuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-        </button>
-
-        {/* Right circle — logo only */}
+        {/* Left circle — logo only */}
         <Link
           to="/"
           onClick={() => setMenuOpen(false)}
@@ -154,6 +145,15 @@ export default function Navbar() {
             className="w-9 h-9 object-contain"
           />
         </Link>
+
+        {/* Right circle — hamburger */}
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+          className="w-12 h-12 rounded-full bg-white/95 backdrop-blur-md shadow-[0_4px_20px_-4px_rgba(17,24,39,0.22)] flex items-center justify-center text-foreground transition-transform duration-200 active:scale-95"
+        >
+          {menuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+        </button>
       </div>
 
       {/* ─── Mobile slide-down menu ───────────────────────────────────────── */}
