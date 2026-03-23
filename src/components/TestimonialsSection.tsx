@@ -25,7 +25,7 @@ export default function TestimonialsSection() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="flex md:grid md:grid-cols-2 gap-6 overflow-x-auto md:overflow-visible pb-4 md:pb-0 scroll-smooth snap-x snap-mandatory md:snap-none scrollbar-hide">
           {testimonials.map((t, i) => (
             <motion.div
               key={t.id}
