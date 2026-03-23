@@ -18,7 +18,7 @@ export default function AboutSection() {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section id="about" className="section-padding bg-muted/30">
+    <section id="about" className="section-padding bg-muted/50">
       <div className="brand-container" ref={ref}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Image */}

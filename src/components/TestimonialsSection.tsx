@@ -8,7 +8,7 @@ export default function TestimonialsSection() {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section id="testimonials" className="section-padding bg-background">
+    <section id="testimonials" className="section-padding bg-foreground">
       <div className="brand-container" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -16,11 +16,11 @@ export default function TestimonialsSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <span className="text-primary font-body font-medium text-sm uppercase tracking-widest mb-2 block">
+          <span className="text-accent font-body font-medium text-sm uppercase tracking-widest mb-2 block">
             Happy Customers
           </span>
-          <h2 className="font-heading font-bold text-4xl text-foreground">What Our Customers Say</h2>
-          <p className="font-body text-muted-foreground mt-3 max-w-xl mx-auto text-sm">
+          <h2 className="font-heading font-bold text-4xl text-white">What Our Customers Say</h2>
+          <p className="font-body text-white/60 mt-3 max-w-xl mx-auto text-sm">
             Real results from real homes — see the work that earned their trust.
           </p>
         </motion.div>
