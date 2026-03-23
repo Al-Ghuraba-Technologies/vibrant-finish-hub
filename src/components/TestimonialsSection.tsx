@@ -32,7 +32,7 @@ export default function TestimonialsSection() {
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: i * 0.12 }}
-              className="bg-accent rounded-brand shadow-brand hover:shadow-brand-hover hover:-translate-y-1 transition-all duration-300 overflow-hidden"
+              className="bg-white/8 border border-white/10 rounded-brand shadow-brand hover:shadow-brand-hover hover:-translate-y-1 transition-all duration-300 overflow-hidden"
             >
               {/* Work Image */}
               <div className="relative w-full h-52 overflow-hidden">
@@ -54,7 +54,7 @@ export default function TestimonialsSection() {
               <div className="p-6 relative">
                 {/* Quote icon */}
                 <div className="absolute top-5 right-6">
-                  <Quote className="w-8 h-8 text-accent-foreground/20" />
+                  <Quote className="w-8 h-8 text-white/10" />
                 </div>
 
                 {/* Stars */}
@@ -63,27 +63,27 @@ export default function TestimonialsSection() {
                     <Star
                       key={si}
                       className={`w-4 h-4 ${
-                        si < t.rating ? "fill-amber-500 text-amber-500" : "text-amber-200"
+                        si < t.rating ? "fill-accent text-accent" : "text-white/20"
                       }`}
                     />
                   ))}
                 </div>
 
-                <p className="font-body text-accent-foreground/80 text-sm leading-relaxed mb-5">
+                <p className="font-body text-white/75 text-sm leading-relaxed mb-5">
                   "{t.review}"
                 </p>
 
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
                     <span className="font-heading font-bold text-sm text-primary">
                       {t.name.charAt(0)}
                     </span>
                   </div>
                   <div>
-                    <p className="font-heading font-semibold text-sm text-accent-foreground">
+                    <p className="font-heading font-semibold text-sm text-white">
                       {t.name}
                     </p>
-                    <p className="font-body text-xs text-accent-foreground/60">{t.location}</p>
+                    <p className="font-body text-xs text-white/50">{t.location}</p>
                   </div>
                 </div>
               </div>
