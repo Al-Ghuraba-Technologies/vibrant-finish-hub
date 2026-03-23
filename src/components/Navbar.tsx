@@ -99,15 +99,12 @@ export default function Navbar() {
       >
         <div className="w-full bg-transparent px-6 py-5">
           <div className="flex items-center justify-between">
-            <Link to="/" className="flex items-center gap-2">
+            <Link to="/" className="flex items-center">
               <img
                 src={logo}
                 alt="Hindustan Paints & Tools"
                 className="h-8 w-auto object-contain"
               />
-              <span className="font-heading font-bold text-base text-white">
-                Hindustan Paints
-              </span>
             </Link>
             <button
               className="p-2 rounded-lg text-white hover:bg-white/10 transition-colors"
