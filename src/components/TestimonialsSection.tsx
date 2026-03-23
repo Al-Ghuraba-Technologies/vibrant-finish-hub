@@ -32,7 +32,7 @@ export default function TestimonialsSection() {
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: i * 0.12 }}
-              className="bg-white/8 border border-white/10 rounded-brand shadow-brand hover:shadow-brand-hover hover:-translate-y-1 transition-all duration-300 overflow-hidden"
+              className="flex-shrink-0 w-[80vw] md:w-auto snap-start bg-white/8 border border-white/10 rounded-brand shadow-brand hover:shadow-brand-hover hover:-translate-y-1 transition-all duration-300 overflow-hidden"
             >
               {/* Work Image */}
               <div className="relative w-full h-52 overflow-hidden">
