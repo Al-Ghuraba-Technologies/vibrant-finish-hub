@@ -25,14 +25,14 @@ export default function TestimonialsSection() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="flex md:grid md:grid-cols-2 gap-6 overflow-x-auto md:overflow-visible pb-4 md:pb-0 scroll-smooth snap-x snap-mandatory md:snap-none scrollbar-hide">
           {testimonials.map((t, i) => (
             <motion.div
               key={t.id}
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: i * 0.12 }}
-              className="bg-white/8 border border-white/10 rounded-brand shadow-brand hover:shadow-brand-hover hover:-translate-y-1 transition-all duration-300 overflow-hidden"
+              className="flex-shrink-0 w-[80vw] md:w-auto snap-start bg-white/8 border border-white/10 rounded-brand shadow-brand hover:shadow-brand-hover hover:-translate-y-1 transition-all duration-300 overflow-hidden"
             >
               {/* Work Image */}
               <div className="relative w-full h-52 overflow-hidden">
