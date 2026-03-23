@@ -8,7 +8,7 @@ export default function ContactSection() {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section id="contact" className="section-padding bg-background">
+    <section id="contact" className="section-padding bg-secondary/8">
       <div className="brand-container" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 20 }}

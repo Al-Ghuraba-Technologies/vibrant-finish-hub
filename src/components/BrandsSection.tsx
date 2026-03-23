@@ -8,7 +8,7 @@ export default function BrandsSection() {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section id="brands" className="section-padding bg-muted/40">
+    <section id="brands" className="section-padding bg-primary/5">
       <div className="brand-container" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
