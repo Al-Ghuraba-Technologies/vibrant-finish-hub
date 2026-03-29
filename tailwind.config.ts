@@ -61,7 +61,7 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
         brand: {
-          primary: "hsl(347 80% 50%)",
+          primary: "hsl(215 40% 22%)",
           secondary: "hsl(199 89% 48%)",
           accent: "hsl(48 97% 77%)",
           text: "hsl(222 39% 11%)",
