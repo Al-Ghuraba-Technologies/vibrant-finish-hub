@@ -71,8 +71,8 @@ export default function HeroSection() {
         animate={{ opacity: 1 }}
         transition={{ delay: 1.2 }}
       >
-        <span className="text-white/50 font-body text-xs tracking-widest uppercase">Scroll</span>
-        <div className="w-px h-8 bg-gradient-to-b from-white/50 to-transparent" />
+        <span className="text-foreground/50 font-body text-xs tracking-widest uppercase">Scroll</span>
+        <div className="w-px h-8 bg-gradient-to-b from-foreground/50 to-transparent" />
       </motion.div>
     </section>
   );
