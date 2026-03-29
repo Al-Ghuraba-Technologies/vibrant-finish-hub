@@ -11,8 +11,8 @@ export default function HeroSection() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroBg})` }}
       />
-      {/* Light overlay for text readability */}
-      <div className="absolute inset-0 bg-white/30" />
+      {/* Dark gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/30 to-transparent" />
       {/* Decorative color accent */}
       <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-secondary to-primary" />
 
@@ -33,11 +33,11 @@ export default function HeroSection() {
             🎨 Thalassery's Trusted Paint Store
           </motion.span>
 
-          <h1 className="font-heading font-bold text-5xl md:text-7xl text-foreground leading-tight mb-4">
+          <h1 className="font-heading font-bold text-5xl md:text-7xl text-white leading-tight mb-4">
             Hindustan{" "}
-            <span className="text-secondary">Paints</span>
+            <span className="text-primary">Paints</span>
           </h1>
-          <p className="font-body text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
+          <p className="font-body text-lg md:text-xl text-white/80 mb-8 leading-relaxed">
             Thalassery's Choice for 20 Years: Expert Care, Dream Finishes.
           </p>
 
@@ -55,7 +55,7 @@ export default function HeroSection() {
                 e.preventDefault();
                 document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
               }}
-              className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-8 py-4 rounded-brand font-body font-medium text-base hover:bg-primary hover:text-primary-foreground hover:scale-105 transition-all duration-300"
+              className="inline-flex items-center justify-center gap-2 border-2 border-white text-white px-8 py-4 rounded-brand font-body font-medium text-base hover:bg-white hover:text-foreground hover:scale-105 transition-all duration-300"
             >
               <Phone className="w-5 h-5" />
               Contact Us
@@ -71,8 +71,8 @@ export default function HeroSection() {
         animate={{ opacity: 1 }}
         transition={{ delay: 1.2 }}
       >
-        <span className="text-foreground/50 font-body text-xs tracking-widest uppercase">Scroll</span>
-        <div className="w-px h-8 bg-gradient-to-b from-foreground/50 to-transparent" />
+        <span className="text-white/50 font-body text-xs tracking-widest uppercase">Scroll</span>
+        <div className="w-px h-8 bg-gradient-to-b from-white/50 to-transparent" />
       </motion.div>
     </section>
   );
