@@ -33,11 +33,11 @@ export default function HeroSection() {
             🎨 Thalassery's Trusted Paint Store
           </motion.span>
 
-          <h1 className="font-heading font-bold text-5xl md:text-7xl text-white leading-tight mb-4">
+          <h1 className="font-heading font-bold text-5xl md:text-7xl text-foreground leading-tight mb-4">
             Hindustan{" "}
-            <span className="text-primary">Paints</span>
+            <span className="text-secondary">Paints</span>
           </h1>
-          <p className="font-body text-lg md:text-xl text-white/80 mb-8 leading-relaxed">
+          <p className="font-body text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
             Thalassery's Choice for 20 Years: Expert Care, Dream Finishes.
           </p>
 
