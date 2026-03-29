@@ -55,7 +55,7 @@ export default function HeroSection() {
                 e.preventDefault();
                 document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
               }}
-              className="inline-flex items-center justify-center gap-2 border-2 border-white text-white px-8 py-4 rounded-brand font-body font-medium text-base hover:bg-white hover:text-foreground hover:scale-105 transition-all duration-300"
+              className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-8 py-4 rounded-brand font-body font-medium text-base hover:bg-primary hover:text-primary-foreground hover:scale-105 transition-all duration-300"
             >
               <Phone className="w-5 h-5" />
               Contact Us
